@@ -1,0 +1,29 @@
+<h3>Edit this pet</h3>
+
+<br>
+<div class="pet-edit-container">
+    <p> {{ editResults.content }} </p>
+    <form (submit)="onSubmitEdit()" class="editPetForm">
+        
+        <p>Pet Name:</p>
+            <input type="text" 
+            name=editPet.petName 
+            [(ngModel)]="editPet.petName" />
+        <p>Pet Type:</p>
+            <input type="text" 
+                name=editPet.petType 
+                [(ngModel)]="editPet.petType" />
+        <p>Description:</p>
+                <input type="text" 
+                name=editPet.description
+                [(ngModel)]="editPet.description" />
+        <p>Skills (optional)</p>
+        <p class="inline-label">Skill 1:<input type="text" name=editPet.skillOne [(ngModel)]="editPet.skillOne" /></p>
+        <p class="inline-label">Skill 2:<input type="text" name=editPet.skillTwo [(ngModel)]="editPet.skillTwo" /></p>
+        <p class="inline-label">Skill 3:<input type="text" name=editPet.skillThree [(ngModel)]="editPet.skillThree" /></p>
+
+        <button type="submit">Update</button>
+        <button [routerLink]="['/pets/' + editPet._id]">Cancel</button>
+    </form>
+</div>
+

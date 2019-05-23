@@ -1,0 +1,38 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.pet-container {
+    text-align: left;
+    width: 80%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button {
+    padding: 3px;
+    margin: 3px;
+    height: 30px;
+    width: 60px;
+    border-radius: 4px;
+    background-color: darkgray;
+    color: white;
+}
+table {
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 80%;
+}
+td, th {
+    padding: 2px;
+    border: 1px solid black;
+    min-width: 20%;
+}
+tr:nth-child(even) {
+    background-color: #D3D3D3;
+}
+th {
+    background-color: #D3D3D3;
+    color: white;
+    padding: 2px;
+
+}

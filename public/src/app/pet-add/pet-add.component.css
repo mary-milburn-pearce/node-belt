@@ -1,0 +1,16 @@
+.pet-add-container {
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: left;
+    width: 80%;
+    padding: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* button {
+    padding: 3px;
+    height: 30px;
+    width: 60px;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+} */

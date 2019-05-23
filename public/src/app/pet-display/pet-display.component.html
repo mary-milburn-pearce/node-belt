@@ -1,0 +1,38 @@
+<h3 id="top-line-text"> Details about {{ pet.petName }}</h3>
+<a routerLink="/pets" class="top-line">Home</a>
+
+<div class="pet-container">
+    <table >
+        <tr>
+            <td><h2>Pet Type</h2></td>
+            <td><p>{{ pet.petType }}</p></td>
+        </tr>
+        <tr>
+            <td><h2>Description</h2></td>
+            <td><p>{{ pet.description }}</p></td>
+        </tr>
+        <tr>
+            <td><h2>Skills</h2></td>
+            <td *ngIf="pet.skillOne"><p>{{ pet.skillOne }}</p></td>
+        </tr>                
+        <tr *ngIf="pet.skillTwo">
+            <td></td>
+            <td><p>{{ pet.skillTwo }}</p></td>
+        </tr>
+        <tr *ngIf="pet.skillThree">
+            <td></td>
+            <td><p>{{ pet.skillThree }}</p></td>
+        </tr>
+        <tr>
+            <td><h2>Likes</h2></td>
+            <td><p>{{ pet.likes }}</p></td>
+        </tr>
+            <br>
+        <p> {{ results.content }} </p>
+        <button (click)="addLike(pet)" [disabled]="liked">Like this pet</button>
+        <button (click)="delPet(pet)">Adopt this pet</button>
+    </table>
+</div>
+      
+
+
