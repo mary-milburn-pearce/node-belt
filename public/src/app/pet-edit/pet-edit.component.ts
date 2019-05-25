@@ -44,9 +44,11 @@ export class PetEditComponent implements OnInit {
       if (data != null && data != undefined) { 
         if (data['errors']) {
           this.editResults['content']=data['message'];
+        } else {
+          this._router.navigate(['/pets/' + id]);
         }
       } else {
-        this._router.navigate(['/pets' + id]);
+        this._router.navigate(['/pets/' + id]);
       }
     });
   }

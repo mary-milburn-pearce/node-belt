@@ -13,8 +13,8 @@
         <td>{{ pet.petName }}</td>
         <td>{{ pet.petType }}</td>
         <td>
-            <button [routerLink]="['/pets/5ce6e090a1157048f833adca']">Details</button>
-            <button [routerLink]="['/pets/5ce6e090a1157048f833adca/edit']">Edit</button>
+            <button [routerLink]="['/pets', pet._id]">Details</button>
+            <button [routerLink]="['/pets', pet._id, 'edit']">Edit</button>
         </td>
     </tr>
     </table>
